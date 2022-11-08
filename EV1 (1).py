@@ -109,7 +109,7 @@ training_data_prediction=reg.predict(X_train)
 plt.scatter(Y_train,training_data_prediction)
 plt.xlabel("Actual Range")
 plt.ylabel("Predicted Range")
-plt.title("Actual price vs Predicted price")
+plt.title("Actual range vs Predicted range")
 plt.show()
 
 
@@ -140,7 +140,7 @@ training_data_prediction=lasso_reg.predict(X_train)
 plt.scatter(Y_train,training_data_prediction)
 plt.xlabel("Actual Range")
 plt.ylabel("Predicted Range")
-plt.title("Actual price vs Predicted price")
+plt.title("Actual range vs Predicted range")
 plt.show()
 
 
@@ -171,7 +171,7 @@ training_data_prediction=ridge_reg.predict(X_train)
 plt.scatter(Y_train,training_data_prediction)
 plt.xlabel("Actual Range")
 plt.ylabel("Predicted Range")
-plt.title("Actual price vs Predicted price")
+plt.title("Actual range vs Predicted range")
 plt.show()
 
 
