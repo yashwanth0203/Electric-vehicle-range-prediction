@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Projectify-ML1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+    <div class="page">
+        <h1 class="animate__animated animate__backInDown">Predict Electric Vehicle Range</h1>
+
+        <!-- Main Input For Receiving Query to our ML -->
+        <form class="f" action="{{ url_for('predict')}}" method="post">
+            <div class="form" id="ff">
+                <input autocomplete="off" type="text" name="Acceleration 0 - 100 km/h" placeholder="Acceleration 0 - 100 km/h" required="required" />
+                <input autocomplete="off" type="text" name="Top Speed" placeholder="Top Speed" required="required" />
+                <input autocomplete="off" type="text" name="Total Power" placeholder="Total Power" required="required" />
+                <input autocomplete="off" type="text" name="Total Torque" placeholder="Total Torque" required="required" />
+                <!-- <label for="drive">Drive -->
+                <select style="color: #c91818;" id="drive" name="drive" aria-placeholder="Drive">
+                        <option value="" disabled selected>Drive</option>
+                        <option value="0">Front</option>
+                        <option value="2">Rear</option>
+                        <option value="1">AWD</option>
+                </select>
+                <!-- </label> -->
+
+                <input autocomplete="off" type="text" name="Battery Capacity" placeholder="Battery Capacity" required="required" />
+                <input autocomplete="off" type="text" name="Charge Power" placeholder="Charge Power" required="required" />
+                <input autocomplete="off" type="text" name="Charge Speed" placeholder="Charge Speed" required="required" />
+                <input autocomplete="off" type="text" name="Fastcharge Speed" placeholder="Fastcharge Speed" required="required" />
+                <input autocomplete="off" type="text" name="Wheelbase" placeholder="Wheelbase" required="required" />
+                <input autocomplete="off" type="text" name="Gross Vehicle Weight (GVWR)" placeholder="Gross Vehicle Weight (GVWR)" required="required" />
+                <input autocomplete="off" type="text" name="Max. Payload" placeholder="Max. Payload" required="required" />
+                <input autocomplete="off" type="text" name="Cargo Volume" placeholder="Cargo Volume" required="required" />
+                <input autocomplete="off" type="text" name="Width" placeholder="Width" required="required" />
+                <input autocomplete="off" type="text" name="Length" placeholder="Length" required="required" />
+            </div>
+
+
+
+
+            <div id="b">
+                <button onclick="fadeleft()" type="submit" class="btn btn-primary btn-block btn-large">PREDICT</button>
+            </div>
+        </form>
+
+
+
+        <!-- <div id="b">
+            <div id="res">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>EV Range</th>
+                            <td>
+                                {{ a1 }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>City - Cold</th>
+                            <td>
+                                {{ a2 }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>High - Cold</th>
+                            <td>
+                                {{ a3 }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Combined - Cold</th>
+                            <td>
+                                {{ a4 }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>City - Mild</th>
+                            <td>
+                                {{ a5 }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Highway - Mild</th>
+                            <td>
+                                {{ a6 }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Combined - Mild</th>
+                            <td>
+                                {{ a7 }}
+                            </td>
+                        </tr>
+
+                </table>
+            </div>
+        </div> -->
+
+
+
+    </div>
+
+
+</body>
+
+<script>
+    function fadeleft() {
+        document.getElementById('ff').style.display = 'animate__animated animate__fadeOutLeft';
+    }
+</script>
+
+</html>
