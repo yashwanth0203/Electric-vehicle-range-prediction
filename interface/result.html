@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Document</title>
+</head>
+
+<style>
+    #b {
+        width: 100%;
+        margin: 60px auto;
+    }
+    
+    table {
+        overflow: hidden;
+        border-radius: 10px;
+        text-align: center;
+        /* outline: 1px solid white; */
+        font-size: 0.6em;
+        width: 100%;
+    }
+    
+    th,
+    td {
+        /* border-radius: 5px; */
+        padding: 5px;
+        outline: 2px solid white;
+    }
+    
+    th:nth-child(1) {
+        /* background-color: #f2f2f2; */
+        border-radius: 10px 0 0 0;
+    }
+    
+    th:nth-child(7) {
+        border-radius: 0 10px 0 0;
+    }
+    
+    td:nth-child(1) {
+        /* background-color: #f2f2f2; */
+        border-radius: 0 0 0 10px;
+    }
+    
+    td:nth-child(7) {
+        border-radius: 0 0 10px 0;
+    }
+    
+    #res {
+        margin: 12.5% auto;
+        width: 80%;
+    }
+</style>
+
+<body>
+    <h1 class="">Predict Electric Vehicle Range</h1>
+    <div id="b">
+        <div class="animate__animated animate__fadeIn" id="res" style="animation-duration: 2s;">
+            <!-- <table>
+                <tbody>
+                    <tr>
+                        <th>EV Range</th>
+                        <td>
+                            {{ a1 }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>City - Cold</th>
+                        <td>
+                            {{ a2 }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>High - Cold</th>
+                        <td>
+                            {{ a3 }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Combined - Cold</th>
+                        <td>
+                            {{ a4 }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>City - Mild</th>
+                        <td>
+                            {{ a5 }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Highway - Mild</th>
+                        <td>
+                            {{ a6 }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Combined - Mild</th>
+                        <td>
+                            {{ a7 }}
+                        </td>
+                    </tr>
+
+            </table> -->
+
+
+            <table>
+                <tr>
+                    <th>EV Range</th>
+                    <th>City - Cold</th>
+                    <th>High - Cold</th>
+                    <th>Combined - Cold</th>
+                    <th>City - Mild</th>
+                    <th>Highway - Mild</th>
+                    <th>Combined - Mild</th>
+                </tr>
+                <tr>
+                    <td>{{ a1 }}</td>
+                    <td>{{ a2 }}</td>
+                    <td>{{ a3 }}</td>
+                    <td>{{ a4 }}</td>
+                    <td>{{ a5 }}</td>
+                    <td>{{ a6 }}</td>
+                    <td>{{ a7 }}</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
