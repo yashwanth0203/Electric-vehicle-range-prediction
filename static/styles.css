@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important
+}
+
+body {
+    background-color: #83a6e3;
+    background-image: url(/static/img/pexels-pixabay-315938.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-shadow: 0px 0px 30px #D80032;
+    color: blue;
+    margin: 30px;
+    text-align: center;
+    font-family: 'Krona One';
+    font-size: 3em;
+    color: #c91818;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #edf2f447;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.123);
+}
+
+#b {
+    display: flex;
+}
+
+.form>input,
+select {
+    width: 80%;
+    border: solid 2px #a6b1c4;
+    font-family: 'Krona One';
+    text-align: center;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 30px;
+    transition: color 0.5s;
+}
+
+label {
+    width: 80%;
+    border: solid 2px #a6b1c4;
+    font-family: 'Krona One';
+    text-align: center;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 30px;
+    transition: color 0.5s;
+}
+
+::placeholder {
+    color: #c91818;
+    opacity: 1;
+    /* Firefox */
+}
+
+.dd {
+    color: #c91818;
+}
+
+input:focus,
+#drive:focus {
+    outline: none;
+    border: solid 2px #D80032;
+    filter: drop-shadow(0px 0px 20px #d8003286);
+}
+
+input:hover {
+    color: rgb(117, 117, 255);
+}
+
+button {
+    border: 0;
+    color: white;
+    font-family: 'Krona One';
+    margin: 15px auto;
+    height: 60px;
+    width: 180px;
+    border-radius: 30px;
+    transition: scale 0.5s;
+    background: #c91818;
+}
+
+button:focus {
+    filter: drop-shadow(0px 0px 30px #D80032);
+    outline: none;
+}
+
+button:hover {
+    filter: drop-shadow(0px 0px 30px #D80032);
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.pred {
+    margin: 0 auto;
+    width: 70%;
+    height: 40px;
+    background-color: rgb(176, 176, 176);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        width: 90%;
+        height: 200vh;
+    }
+}
+
+#res {
+    /* display: blo */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 37.5%;
+    background-color: #edf2f4c4;
+    color: #D80032;
+    font-size: 2em;
+    font-family: Poppins;
+}
