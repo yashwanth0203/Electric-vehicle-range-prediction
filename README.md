@@ -7,3 +7,5 @@
 - Also built a User Interface for it demonstrating the model.
 
 
+- You can watch the demo video here:
+https://youtu.be/ZF6niys8--o
